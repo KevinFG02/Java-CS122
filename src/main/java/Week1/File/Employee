@@ -1,0 +1,12 @@
+E001,John Smith,IT,28,65000,4,Full-Time,Seattle,true
+E002,Sarah Johnson,HR,35,72000,9,Full-Time,Tacoma,true
+E003,James Roby,Finance,42,88000,15,Full-Time,Bellevue,true
+E004,Emily Davis,IT,25,58000,2,Contract,Seattle,true
+E005,Michael Brown,Sales,31,54000,6,Full-Time,Federal Way,false
+E006,Fahim Noor,Marketing,29,61000,5,Part-Time,Kent,true
+E007,David Wilson,Finance,50,95000,22,Full-Time,Seattle,true
+E008,Linda Martinez,HR,27,48000,3,Part-Time,Auburn,true
+E009,Ahmad Khan,IT,38,82000,12,Full-Time,Redmond,true
+E010,Jessica Lee,Sales,45,90000,20,Full-Time,Bellevue,false
+E011,Robert Taylor,IT,33,77000,8,Full-Time,Seattle,true
+E012,Zabi Ahmadi,Marketing,41,85000,18,Contract,Kent,true
