@@ -1,5 +1,10 @@
 package Week1;
+import java.util.Arrays;
 import java.util.Scanner;
+
+// Kevin G Flores
+// Friday Lab - Week 1
+// Winter CS122
 
 public class Jan9FridayLab {
     public static void main(String[] args) {
@@ -15,19 +20,25 @@ public class Jan9FridayLab {
         boolean stopAnswering = false;
         String[] favMovies = new String[0];
 
-        while (stopAnswering == false){
-            System.out.println("Type your favorite past time: ");
+        System.out.println("Type 'Stop' if you want stop this session.");
+        while (!stopAnswering){
+            System.out.println("Type your favorite movies: ");
             String inputMovie = inputUserInfo.next();
-            if (inputMovie == "Stop"){
+            if (inputMovie.equals("Stop")){
                 stopAnswering = true;
             } else {
-                favMovies[movieCount] = inputMovie;
+                movieCount++;
+                favMovies = Arrays.copyOf(favMovies, movieCount);
+                favMovies[movieCount - 1] = inputMovie;
             }
-            movieCount++;
         }
 
         System.out.println("Your age is " + AGE);
+        System.out.println();
         myFavoritePastTime(pastTime, count);
+        System.out.println();
+        int totalCountMovies = myFavoriteMovies(favMovies);
+        System.out.println("Total Movies: " + totalCountMovies);
     }
 
     public static void myFavoritePastTime(String pastTimeString, int pastTimeCount){
@@ -36,7 +47,12 @@ public class Jan9FridayLab {
         }
     }
 
-    public static int myFavoriteMovies(String[] moviearray) {
+    public static int myFavoriteMovies(String[] movieArray) {
+        int numMovies = movieArray.length;
+        for(int j = 1; j < numMovies; j++) {
+            System.out.println("Movie " + j + ": " + movieArray[j-1]);
+        }
 
+        return numMovies;
     }
 }
