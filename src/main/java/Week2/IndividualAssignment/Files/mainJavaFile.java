@@ -1,4 +1,4 @@
-package Week2.IndividualAssignment;
+package Week2.IndividualAssignment.Files;
 import java.util.*;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -20,20 +20,31 @@ public class mainJavaFile {
         }
     }
 
-    public static void caseOne(){
-
-        /*File readFile1 = new File("IndividualAssignment/Files/suspicious-numbers.txt");
+    public static void caseOne() {
+        File readFile1 = new File("src/main/java/Week2/IndividualAssignment/Files/txtFiles/suspicious-numbers.txt");
         Scanner scanCaseFile = null;
+        int susNumbers = 0;
 
         try {
             scanCaseFile = new Scanner(readFile1);
 
+            System.out.println("Valid Numbers Found: ");
             while(scanCaseFile.hasNextDouble()){
-                System.out.println(scanCaseFile.nextInt());
+                double oneDouble = scanCaseFile.nextDouble();
+                if (oneDouble > 800 && oneDouble < 1600){
+                    System.out.println(oneDouble);
+                } else {
+                    susNumbers = susNumbers + 1;
+                }
             }
         } catch (FileNotFoundException e) {
             System.out.println("An error occurred." + e);
             System.exit(1);
-        }*/
+        }
+        System.out.println("Filtered out " + susNumbers + " suspicious numbers.");
+    }
+
+    public static void caseTwo(){
+
     }
 }
