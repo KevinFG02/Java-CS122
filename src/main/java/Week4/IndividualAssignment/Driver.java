@@ -1,5 +1,11 @@
 package Week4.IndividualAssignment;
 
+/*
+    Kevin G Flores
+    2/1/26
+    CS122
+ */
+
 public class Driver {
     public static void main(String[] args){
         Animal animal1 = new Animal("Dinosaur", 5, 80.2, "Jungle");

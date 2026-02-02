@@ -1,13 +1,16 @@
 package Week4.IndividualAssignment;
 
 public class Mammal extends Animal{
+    // Fields
     private boolean hasFur;
 
+    // Constructor
     public Mammal(String name, int age, double weight, String habitat, boolean hasFur){
         super(name, age, weight, habitat);
         this.hasFur = hasFur;
     }
 
+    //Methods
     public boolean hasFur(){
         return this.hasFur;
     }

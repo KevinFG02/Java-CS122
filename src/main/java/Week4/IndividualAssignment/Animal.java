@@ -1,11 +1,13 @@
 package Week4.IndividualAssignment;
 
 public class Animal {
+    // Fields
     private String name;
     private int age;
     private double weight;
     private String habitat;
 
+    // Constructors
     public Animal(String name, int age, double weight, String habitat){
         this.name = name;
         this.age = age;
@@ -13,6 +15,7 @@ public class Animal {
         this.habitat = habitat;
     }
 
+    // Methods
     public String getName(){return this.name;}
 
     public int getAge(){return this.age;}
