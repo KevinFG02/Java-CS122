@@ -1,4 +1,4 @@
-package Week4.products;
+package Week4.FridayLab.products;
 
 //represents an item with a location at a store
 public class PlaceableItem

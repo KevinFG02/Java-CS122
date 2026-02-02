@@ -1,4 +1,4 @@
-package Week4.products;
+package Week4.FridayLab.products;
 
 //represents a product that can be on sale
 public class SaleProduct extends Product

@@ -1,4 +1,4 @@
-package Week4.products;
+package Week4.FridayLab.products;
 
 //Represents a sellable product
 public class Product extends PlaceableItem

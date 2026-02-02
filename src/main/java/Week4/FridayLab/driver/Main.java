@@ -1,8 +1,8 @@
-package Week4.driver;
+package Week4.FridayLab.driver;
 
-import Week4.products.PlaceableItem;
-import Week4.products.Product;
-import Week4.products.SaleProduct;
+import Week4.FridayLab.products.PlaceableItem;
+import Week4.FridayLab.products.Product;
+import Week4.FridayLab.products.SaleProduct;
 
 public class Main
 {
