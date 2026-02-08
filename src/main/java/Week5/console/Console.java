@@ -1,4 +1,4 @@
-package console;
+package Week5.console;
 
 import java.util.Scanner;
 

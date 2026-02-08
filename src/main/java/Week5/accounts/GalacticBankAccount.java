@@ -1,4 +1,4 @@
-package java.Week5.accounts;
+package Week5.accounts;
 
 import java.util.UUID;
 

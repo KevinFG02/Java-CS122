@@ -1,6 +1,6 @@
-package program;
+package Week5.program;
 
-import bank.GalacticBank;
+import Week5.bank.GalacticBank;
 
 import java.util.Scanner;
 
@@ -38,8 +38,9 @@ public class ConsoleProgram
         System.out.println("Press 4 to exit.");
         System.out.println("Enter your choice: ");
 
-        String accountPath = "Galactic-Bank-main/galactic-bank-master/banking-files/accounts.csv";
-        String transactionsPath = "Galactic-Bank-main/galactic-bank-master/banking-files/transactions.csv";
+        String accountPath = "src/main/java/Week5/banking-files/accounts.csv";
+        String transactionsPath = "src/main/java/Week5/banking-files/transactions.csv";
+        String workersPath = "src/main/java/Week5/banking-files/workers.csv";
         boolean consoleStatus = false;
 
         while(!consoleStatus){
@@ -70,7 +71,7 @@ public class ConsoleProgram
                 System.out.println("Press 4 to exit.");
                 System.out.println("Enter your choice: ");
             } else if(typedNumber == 3){
-                bankRequest.readWorkersFromFile("Galactic-Bank-main/galactic-bank-master/banking-files/workers.csv");
+                bankRequest.readWorkersFromFile(workersPath);
                 bankRequest.displayWorkers();
                 System.out.println("Choose an option: ");
                 System.out.println("Press 1 to print Galactic Bank Account");
