@@ -1,4 +1,4 @@
-package IndividualAssignmentWeek3.p3;
+package Week3.IndividualAssignment.p3;
 import java.util.Random;
 
 /*

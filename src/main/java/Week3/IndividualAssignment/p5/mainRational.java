@@ -1,4 +1,4 @@
-package IndividualAssignmentWeek3.p5;
+package Week3.IndividualAssignment.p5;
 
 /*
     Kevin G Flores

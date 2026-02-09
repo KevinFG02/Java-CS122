@@ -1,4 +1,4 @@
-package IndividualAssignmentWeek3.p1;
+package Week3.IndividualAssignment.p1;
 
 public class Point {
     private double x;

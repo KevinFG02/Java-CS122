@@ -1,4 +1,4 @@
-package IndividualAssignmentWeek3.p2;
+package Week3.IndividualAssignment.p2;
 /*
     Kevin G Flores
     CS122
