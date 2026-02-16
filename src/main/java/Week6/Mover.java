@@ -17,44 +17,38 @@ public class Mover {
                 y++;
                 totalCost = Direction.NORTH.getCost() + totalCost;
                 System.out.println("Moved up. Cost:" + Direction.NORTH.getCost());
+                System.out.println("_____________________");
                 break;
             case SOUTH:
                 // Code
                 y--;
                 totalCost = Direction.SOUTH.getCost() + totalCost;
                 System.out.println("Moved down. Cost:" + Direction.SOUTH.getCost());
+                System.out.println("_____________________");
                 break;
             case EAST:
                 // Code
                 x++;
                 totalCost = Direction.EAST.getCost() + totalCost;
                 System.out.println("Moved east. Cost:" + Direction.EAST.getCost());
+                System.out.println("_____________________");
                 break;
             case WEST:
                 // Code
                 x--;
                 totalCost = Direction.WEST.getCost() + totalCost;
                 System.out.println("Moved west. Cost:" + Direction.WEST.getCost());
+                System.out.println("_____________________");
                 break;
         }
     }
 
     public void move10Times() {
-        Random randomNum = new Random();
-        int randomNumber = randomNum.nextInt(5) + 1;
-        Direction randomDirection;
-
-        if (randomNumber == 1){
-            randomDirection = Direction.NORTH;
-        } else if (randomNumber == 2) {
-            randomDirection = Direction.SOUTH;
-        } else if (randomNumber == 3) {
-            randomDirection = Direction.EAST;
-        } else {
-            randomDirection = Direction.WEST;
-        }
-
         for(int i = 0; i < 10; i++){
+            Random randomPick = new Random();
+            Direction[] allDirections = Direction.values();
+            int arraySize = allDirections.length;
+            Direction randomDirection = allDirections[randomPick.nextInt(arraySize)];
             move(randomDirection);
         }
 
