@@ -1,6 +1,5 @@
-package Week6;
+package Week6.FridayLab;
 
-import Week6.Direction;
 import java.util.Random;
 
 public class Mover {

@@ -1,4 +1,4 @@
-package Week6;
+package Week6.FridayLab;
 
 public enum Direction {
     NORTH(5),
