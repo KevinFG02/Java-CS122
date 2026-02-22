@@ -1,4 +1,4 @@
-package org.example.enrollment;
+package Week7.enrollment;
 
 public enum EnrollmentStatus {
     ENROLLED,

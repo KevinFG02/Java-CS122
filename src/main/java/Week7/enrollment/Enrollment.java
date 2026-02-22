@@ -1,4 +1,4 @@
-package org.example.enrollment;
+package Week7.enrollment;
 
 import java.time.LocalDateTime;
 import java.util.UUID;

@@ -1,4 +1,4 @@
-package org.example.course;
+package Week7.course;
 
 public enum Department {
     COMPUTER_SCIENCE,

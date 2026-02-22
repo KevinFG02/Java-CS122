@@ -1,4 +1,4 @@
-package org.example.course;
+package Week7.course;
 
 import java.util.UUID;
 

@@ -1,4 +1,4 @@
-package org.example.util;
+package Week7.util;
 
 import java.util.Scanner;
 

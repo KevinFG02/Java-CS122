@@ -1,4 +1,4 @@
-package org.example.person;
+package Week7.person;
 
 public enum PersonType {
     STUDENT,

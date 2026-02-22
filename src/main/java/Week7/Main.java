@@ -1,6 +1,6 @@
-package org.example;
+package Week7;
 
-import org.example.controller.UniversitySystem;
+import Week7.controller.UniversitySystem;
 
 /* Kevin Flores
 *  CS122
