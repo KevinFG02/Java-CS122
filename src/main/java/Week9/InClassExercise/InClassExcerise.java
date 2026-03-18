@@ -4,6 +4,8 @@ public class InClassExcerise {
     public static void main(String[] args){
         System.out.println(bunnyEars(5) + " Bunny Ears");
         System.out.println(crazyBunnyEars(5) + " Bunny Ears");
+        System.out.println(countHi("sjndkjnhishdhihu ushi"));
+        System.out.println(sumDigits(1245));
     }
 
     // Problem 1
@@ -43,18 +45,37 @@ public class InClassExcerise {
 
     // Problem 3
 
+
+    // Problem 4
+    public static int countHi(String word){
+        int lengthOfWord = word.length();
+
+        if(lengthOfWord <= 1){
+            return 0;
+        } else {
+            int counterHi = countHi(word.substring(0, word.length() - 1));
+
+            char firstChar = word.charAt(word.length() - 2);
+            char secondChar = word.charAt(word.length() - 1);
+
+            if(firstChar == 'h' && secondChar == 'i'){
+                counterHi = counterHi + 1;
+            }
+
+            return counterHi;
+        }
+    }
+
     // Problem 5
     public static int sumDigits(int number){
         if(Integer.toString(number).length() <= 1){
             return number;
         } else {
-            int newNumber;
+            int integer = number % 10;
             int shortNumber = number / 10;
-            if(Integer.toString(number).length() < 2){
-                newNumber = sumDigits(shortNumber);
-            }
-            int shortNumber2 = number % 10;
+            int newNumber = sumDigits(shortNumber);
 
+            return integer + newNumber;
         }
     }
 }
