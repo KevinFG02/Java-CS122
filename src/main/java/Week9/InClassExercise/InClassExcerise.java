@@ -4,6 +4,7 @@ public class InClassExcerise {
     public static void main(String[] args){
         System.out.println(bunnyEars(5) + " Bunny Ears");
         System.out.println(crazyBunnyEars(5) + " Bunny Ears");
+        System.out.println(checkParens("(((())))"));
         System.out.println(countHi("sjndkjnhishdhihu ushi"));
         System.out.println(sumDigits(1245));
     }
@@ -44,7 +45,42 @@ public class InClassExcerise {
     }
 
     // Problem 3
+    public static boolean checkParens(String parens){
+        int lengthOfWord = parens.length();
 
+        if(lengthOfWord <= 2){
+            if(lengthOfWord == 2){
+                if(parens.charAt(0) == '(' && parens.charAt(parens.length() - 1) == ')'){
+                    return true;
+                } else {
+                    return false;
+                }
+            } else {
+                return false;
+            }
+        } else {
+            boolean condition1;
+            boolean condition2;
+            String paren1 = parens.substring(0);
+            String paren2 = paren1.substring(1, parens.length() - 1);
+            condition1 = checkParens(paren2);
+
+            char firstChar = parens.charAt(0);
+            char lastChar = parens.charAt(parens.length() - 1);
+
+            if(firstChar == '(' && lastChar == ')'){
+                condition2 = true;
+            } else {
+                condition2 = false;
+            }
+
+            if(condition1 && condition2){
+                return true;
+            } else {
+                return false;
+            }
+        }
+    }
 
     // Problem 4
     public static int countHi(String word){
