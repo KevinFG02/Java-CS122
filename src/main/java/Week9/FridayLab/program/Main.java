@@ -1,6 +1,6 @@
 package Week9.FridayLab.program;
 
-import toys.MagicEightBall;
+import Week9.FridayLab.toys.MagicEightBall;
 import java.util.Arrays;
 import java.util.NoSuchElementException;
 
