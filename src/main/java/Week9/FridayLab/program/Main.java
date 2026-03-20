@@ -1,4 +1,4 @@
-package program;
+package Week9.FridayLab.program;
 
 import toys.MagicEightBall;
 import java.util.Arrays;

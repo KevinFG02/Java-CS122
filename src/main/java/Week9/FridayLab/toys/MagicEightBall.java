@@ -1,4 +1,4 @@
-package toys;
+package Week9.FridayLab.toys;
 
 import java.util.NoSuchElementException;
 import java.util.Random;
